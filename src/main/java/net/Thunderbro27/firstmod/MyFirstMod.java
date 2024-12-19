@@ -1,6 +1,7 @@
 package net.Thunderbro27.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.Thunderbro27.firstmod.block.Modblocks;
 import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +35,10 @@ public class MyFirstMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         ModItems.register(modEventBus);
+        Modblocks.register(modEventBus);
+
+
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -51,6 +56,11 @@ public class MyFirstMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ROCK);
+            event.accept(ModItems.RUBY);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(Modblocks.RUBY_BLOCK);
+            event.accept(Modblocks.RUBY_ORE);
         }
     }
 

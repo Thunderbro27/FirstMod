@@ -12,6 +12,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MyFirstMod.MOD_ID);
 
     public static final RegistryObject<Item> ROCK = ITEMS.register("rock", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
