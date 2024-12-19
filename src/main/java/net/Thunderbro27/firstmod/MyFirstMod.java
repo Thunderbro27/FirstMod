@@ -1,7 +1,8 @@
 package net.Thunderbro27.firstmod;
 
 import com.mojang.logging.LogUtils;
-import net.Thunderbro27.firstmod.block.Modblocks;
+import net.Thunderbro27.firstmod.block.ModBlocks;
+import net.Thunderbro27.firstmod.item.ModCreativeModeTabs;
 import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,8 +35,12 @@ public class MyFirstMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        //Custom mod tab. Mod contents below
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
-        Modblocks.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
 
 
@@ -59,8 +64,8 @@ public class MyFirstMod
             event.accept(ModItems.RUBY);
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(Modblocks.RUBY_BLOCK);
-            event.accept(Modblocks.RUBY_ORE);
+            event.accept(ModBlocks.RUBY_BLOCK);
+            event.accept(ModBlocks.RUBY_ORE);
         }
     }
 

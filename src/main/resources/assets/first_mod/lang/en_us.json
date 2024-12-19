@@ -3,5 +3,7 @@
   "item.first_mod.rock": "Rock",
   "item.first_mod.ruby": "Ruby",
   "block.first_mod.ruby_block": "Block of Ruby",
-  "block.first_mod.ruby_ore": "Ruby Ore"
+  "block.first_mod.ruby_ore": "Ruby Ore",
+  "creativetab.firstmod.ruby_items": "Ruby Items",
+  "creativetab.firstmod.ruby_blocks": "Ruby Blocks"
 }
