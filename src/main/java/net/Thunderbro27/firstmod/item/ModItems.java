@@ -13,7 +13,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> ROCK = ITEMS.register("rock", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> RUBY_PICK = ITEMS.register("ruby_pick", () -> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
