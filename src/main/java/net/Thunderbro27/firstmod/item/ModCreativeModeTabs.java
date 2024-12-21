@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RUBY.get());
                         output.accept(ModItems.ROCK.get());
                         output.accept(ModItems.RUBY_PICK.get());
+                        output.accept(ModItems.RUBY_CHISEL.get());
                     })
             .build());
 
@@ -32,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RUBY_BLOCK.get());
                         output.accept(ModBlocks.RUBY_ORE.get());
                         output.accept(ModBlocks.RUBY_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.CONVERTER.get());
                     })
             .build());
 

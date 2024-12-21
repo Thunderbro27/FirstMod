@@ -62,14 +62,17 @@ public class MyFirstMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.ROCK);
             event.accept(ModItems.RUBY);
+
         }
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.RUBY_BLOCK);
             event.accept(ModBlocks.RUBY_DEEPSLATE_ORE);
             event.accept(ModBlocks.RUBY_ORE);
+            event.accept(ModBlocks.CONVERTER.get());
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.RUBY_PICK);
+            event.accept(ModItems.RUBY_CHISEL);
         }
     }
 
