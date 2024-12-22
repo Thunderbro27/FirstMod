@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "first_mod:ruby"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AAA",
+    " / ",
+    " / "
+  ],
+  "result": {
+    "count": 1,
+    "id": "first_mod:ruby_pick"
+  }
+}
