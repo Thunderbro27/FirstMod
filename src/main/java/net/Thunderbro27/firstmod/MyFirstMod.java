@@ -74,6 +74,11 @@ public class MyFirstMod
             event.accept(ModItems.RUBY_PICK);
             event.accept(ModItems.RUBY_CHISEL);
         }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.COCONUT);
+            event.accept(ModItems.STEAK_AND_FRIES);
+            event.accept(ModItems.COCONUT_WATER);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "first_mod:ruby_block"
+    "first_mod:ruby_block",
+    "first_mod:converter"
 
   ]
 }

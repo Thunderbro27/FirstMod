@@ -22,6 +22,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ROCK.get());
                         output.accept(ModItems.RUBY_PICK.get());
                         output.accept(ModItems.RUBY_CHISEL.get());
+                        output.accept(ModItems.COCONUT.get());
+                        output.accept(ModItems.STEAK_AND_FRIES.get());
+                        output.accept(ModItems.COCONUT_WATER.get());
                     })
             .build());
 

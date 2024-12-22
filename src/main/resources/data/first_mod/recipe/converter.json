@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "first_mod:ruby"
+    },
+    "E": {
+      "item": "ender_eye"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AEA",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "first_mod:converter"
+  }
+}

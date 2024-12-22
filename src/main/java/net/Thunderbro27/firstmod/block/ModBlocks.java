@@ -1,6 +1,7 @@
 package net.Thunderbro27.firstmod.block;
 
 import net.Thunderbro27.firstmod.MyFirstMod;
+import net.Thunderbro27.firstmod.block.custom.ConverterBlock;
 import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -30,6 +31,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUBY_DEEPSLATE_ORE = registerBlock("ruby_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3,6),BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
+    public static final RegistryObject<ConverterBlock> CONVERTER = registerBlock("converter",
+            () -> new ConverterBlock(BlockBehaviour.Properties.of().strength(3f)));
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
 
