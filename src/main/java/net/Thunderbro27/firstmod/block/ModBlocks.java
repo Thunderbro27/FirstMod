@@ -6,9 +6,7 @@ import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,6 +31,37 @@ public class ModBlocks {
 
     public static final RegistryObject<ConverterBlock> CONVERTER = registerBlock("converter",
             () -> new ConverterBlock(BlockBehaviour.Properties.of().strength(3f)));
+
+    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+public static final RegistryObject<SlabBlock> RUBY_SLABS = registerBlock("ruby_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
+            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
 

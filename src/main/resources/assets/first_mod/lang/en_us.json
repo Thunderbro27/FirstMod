@@ -1,13 +1,20 @@
 {
   "creativetab.firstmod.ruby_items": "Ruby Items",
   "creativetab.firstmod.ruby_blocks": "Ruby Blocks",
+
+
   "item.first_mod.coconut": "Coconut",
   "item.first_mod.coconut_water": "Coconut Water",
   "item.first_mod.steak_and_fries": "Steak and Fries",
+
+
   "item.first_mod.rock": "Rock",
   "item.first_mod.ruby": "Ruby",
+
   "item.first_mod.ruby_pick": "Ruby Pickaxe",
   "item.first_mod.ruby_chisel": "Ruby Chisel",
+  "tooltip.first_mod.chisel": "Hold shift for more info",
+  "tooltip.first_mod.chisel.shift_down": "Turns some blocks into bricks",
   "block.first_mod.ruby_block": "Block of Ruby",
   "block.first_mod.ruby_ore": "Ruby Ore",
   "block.first_mod.ruby_deepslate_ore": "Deepslate Ruby Ore",
