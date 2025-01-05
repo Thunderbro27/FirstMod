@@ -1,0 +1,6 @@
+// 1.21	2024-12-26T20:13:13.1975625	Tags for minecraft:block mod id first_mod
+e0baf5ca58e146fc9eeaf03bc374de9ba47cca4a data/minecraft/tags/block/fences.json
+f967dcdb7bdd2067fbc8fa2d70bd79ef0f0e89b9 data/minecraft/tags/block/fence_gates.json
+11131780beaf034147771469aca74ada553e4e07 data/minecraft/tags/block/mineable/pickaxe.json
+1ddf48c18a59e12c55c7215e1303cd66f764911f data/minecraft/tags/block/needs_diamond_tool.json
+67c3ab3d811af2990e1021e2a28b70f1fbc00043 data/minecraft/tags/block/walls.json

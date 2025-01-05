@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
@@ -42,7 +43,20 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.RUBY_DEEPSLATE_ORE.get(), ModItems.RUBY.get()));
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createOreDrop(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
+        this.add(ModBlocks.RUBY_SLABS.get(),
+                block -> createSlabItemTable(ModBlocks.RUBY_SLABS.get()));
 
+        dropSelf(ModBlocks.RUBY_TRAPDOOR.get());
+        dropSelf(ModBlocks.RUBY_WALLS.get());
+        dropSelf(ModBlocks.RUBY_FENCE.get());
+        dropSelf(ModBlocks.RUBY_BUTTON.get());
+        dropSelf(ModBlocks.RUBY_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.RUBY_STAIRS.get());
+        dropSelf(ModBlocks.RUBY_FENCE_GATE.get());
+
+
+        this.add(ModBlocks.RUBY_DOOR.get(),
+                block -> createDoorTable(ModBlocks.RUBY_DOOR.get()));
 
     }
     protected LootTable.Builder createMultiOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

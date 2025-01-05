@@ -1,7 +1,6 @@
 {
   "variants": {
     "": {
-
       "model": "first_mod:block/converter"
     }
   }

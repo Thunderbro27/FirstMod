@@ -36,6 +36,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RUBY_BLOCK.get());
                         output.accept(ModBlocks.RUBY_ORE.get());
                         output.accept(ModBlocks.RUBY_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.RUBY_STAIRS.get());
+                        output.accept(ModBlocks.RUBY_DOOR.get());
+                        output.accept(ModBlocks.RUBY_BUTTON.get());
+                        output.accept(ModBlocks.RUBY_FENCE.get());
+                        output.accept(ModBlocks.RUBY_FENCE_GATE.get());
+                        output.accept(ModBlocks.RUBY_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.RUBY_SLABS.get());
+                        output.accept(ModBlocks.RUBY_WALLS.get());
+                        output.accept(ModBlocks.RUBY_TRAPDOOR.get());
                         output.accept(ModBlocks.CONVERTER.get());
                     })
             .build());

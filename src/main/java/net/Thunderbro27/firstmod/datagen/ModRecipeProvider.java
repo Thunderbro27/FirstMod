@@ -27,6 +27,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> RUBY_SMELTABLES = List.of(ModBlocks.RUBY_ORE.get(),
                 ModBlocks.RUBY_DEEPSLATE_ORE.get());
 
+        oreSmelting(p_297267_, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
+                0.25f,  200, "ruby");
+        oreBlasting(p_297267_, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
+                0.25f,  100, "ruby");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUBY_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
@@ -69,10 +74,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(p_297267_);
 
 
-        oreSmelting(p_297267_, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
-                0.25f,  200, "ruby");
-        oreBlasting(p_297267_, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
-                0.25f,  100, "ruby");
+
+        stairBuilder(ModBlocks.RUBY_STAIRS.get(), Ingredient.of(ModItems.RUBY.get())).group("ruby")
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(p_297267_);
+
+        slab(p_297267_, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLABS.get(), ModItems.RUBY.get());
+
+
 
     }
 

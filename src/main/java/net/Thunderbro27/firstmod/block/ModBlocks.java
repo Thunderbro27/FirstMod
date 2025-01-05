@@ -8,6 +8,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -38,29 +40,28 @@ public class ModBlocks {
 public static final RegistryObject<SlabBlock> RUBY_SLABS = registerBlock("ruby_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
-public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
-            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+public static final RegistryObject<PressurePlateBlock> RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON,BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<ButtonBlock> RUBY_BUTTON = registerBlock("ruby_button",
+            () -> new ButtonBlock(BlockSetType.IRON,5,
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> RUBY_FENCE = registerBlock("ruby_fence",
+            () -> new FenceBlock(
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
-            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
+    public static final RegistryObject<FenceGateBlock> RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA,
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<WallBlock> RUBY_WALLS = registerBlock("ruby_walls",
+            () -> new WallBlock(
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
-            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
-            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
-            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
-
-    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
-            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
-    public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
-            () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<DoorBlock> RUBY_DOOR = registerBlock("ruby_door",
+            () -> new DoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final RegistryObject<TrapDoorBlock> RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON,
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
 
         private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
