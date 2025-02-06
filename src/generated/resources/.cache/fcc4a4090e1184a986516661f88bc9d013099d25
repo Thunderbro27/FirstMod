@@ -1,2 +1,3 @@
-// 1.21	2024-12-22T23:23:48.3031223	Tags for minecraft:item mod id first_mod
+// 1.21	2025-01-09T15:34:13.2262739	Tags for minecraft:item mod id first_mod
 363d15dfb9f0af68001670db030f26eb972737cb data/first_mod/tags/item/trans_items.json
+879a7ca9e01d2512e6adca257d4a78c267742dcf data/minecraft/tags/item/trimmable_armor.json

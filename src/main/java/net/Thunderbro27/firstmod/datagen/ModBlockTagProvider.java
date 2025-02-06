@@ -2,6 +2,7 @@ package net.Thunderbro27.firstmod.datagen;
 
 import net.Thunderbro27.firstmod.MyFirstMod;
 import net.Thunderbro27.firstmod.block.ModBlocks;
+import net.Thunderbro27.firstmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -26,10 +27,21 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     tag(BlockTags.NEEDS_DIAMOND_TOOL)
             .add(ModBlocks.RUBY_ORE.get())
-            .add(ModBlocks.RUBY_DEEPSLATE_ORE.get());
+            .add(ModBlocks.RUBY_DEEPSLATE_ORE.get())
+            .add(ModBlocks.SUGILITE_ORE.get())
+            .add(ModBlocks.SUGILITE_DEEPSLATE_ORE.get());
 
     tag(BlockTags.FENCES).add(ModBlocks.RUBY_FENCE.get());
     tag(BlockTags.FENCE_GATES).add(ModBlocks.RUBY_FENCE_GATE.get());
     tag(BlockTags.WALLS).add(ModBlocks.RUBY_WALLS.get());
+    tag(BlockTags.PRESSURE_PLATES).add(ModBlocks.RUBY_PRESSURE_PLATE.get());
+
+    tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+            .add(ModBlocks.RUBY_ORE.get())
+            .add(ModBlocks.RUBY_DEEPSLATE_ORE.get())
+            .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+    tag(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL)
+            .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+            .remove(ModTags.Blocks.NEEDS_RUBY_TOOL);
     }
 }

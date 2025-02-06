@@ -64,6 +64,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_PICK.get()))
                 .save(p_297267_);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_SWORD.get())
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" / ")
+                .define('A', ModItems.RUBY.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_SWORD.get()))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_AXE.get())
+                .pattern("AA ")
+                .pattern("A/ ")
+                .pattern(" / ")
+                .define('A', ModItems.RUBY.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_AXE.get()))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_SHOVEL.get())
+                .pattern(" A ")
+                .pattern(" / ")
+                .pattern(" / ")
+                .define('A', ModItems.RUBY.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_SHOVEL.get()))
+                .save(p_297267_);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_HOE.get())
+                .pattern("AA ")
+                .pattern(" / ")
+                .pattern(" / ")
+                .define('A', ModItems.RUBY.get())
+                .define('/', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_HOE.get()))
+                .save(p_297267_);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CONVERTER.get())
                 .pattern("AAA")
                 .pattern("AEA")
@@ -80,7 +116,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         slab(p_297267_, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLABS.get(), ModItems.RUBY.get());
 
+        fenceBuilder(ModBlocks.RUBY_FENCE.get(),Ingredient.of(ModItems.RUBY.get())).group("ruby")
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(p_297267_);
 
+        fenceGateBuilder(ModBlocks.RUBY_FENCE_GATE.get(),Ingredient.of(ModItems.RUBY.get())).group("ruby")
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(p_297267_);
+
+        wallBuilder( RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_WALLS.get(), Ingredient.of(ModItems.RUBY.get()));
 
     }
 

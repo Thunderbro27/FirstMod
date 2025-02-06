@@ -21,10 +21,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RUBY.get());
                         output.accept(ModItems.ROCK.get());
                         output.accept(ModItems.RUBY_PICK.get());
+                        output.accept(ModItems.RUBY_SWORD.get());
+                        output.accept(ModItems.RUBY_AXE.get());
+                        output.accept(ModItems.RUBY_SHOVEL.get());
+                        output.accept(ModItems.RUBY_HOE.get());
                         output.accept(ModItems.RUBY_CHISEL.get());
+                        output.accept(ModItems.RUBY_HAMMER.get());
+                        output.accept(ModItems.RUBY_HELMET.get());
+                        output.accept(ModItems.RUBY_CHESTPLATE.get());
+                        output.accept(ModItems.RUBY_LEGGINGS.get());
+                        output.accept(ModItems.RUBY_BOOTS.get());
                         output.accept(ModItems.COCONUT.get());
                         output.accept(ModItems.STEAK_AND_FRIES.get());
                         output.accept(ModItems.COCONUT_WATER.get());
+                        output.accept(ModItems.SUGILITE.get());
+                        output.accept(ModItems.RUBY_BOW.get());
                     })
             .build());
 
@@ -45,7 +56,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RUBY_SLABS.get());
                         output.accept(ModBlocks.RUBY_WALLS.get());
                         output.accept(ModBlocks.RUBY_TRAPDOOR.get());
+                        output.accept(ModBlocks.SUGILITE_BLOCK.get());
+                        output.accept(ModBlocks.SUGILITE_ORE.get());
+                        output.accept(ModBlocks.SUGILITE_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.CONVERTER.get());
+                        output.accept(ModBlocks.RUBY_LAMP.get());
                     })
             .build());
 

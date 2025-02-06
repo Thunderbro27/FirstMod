@@ -1,4 +1,4 @@
-// 1.21	2024-12-24T20:03:17.0143777	Loot Tables
+// 1.21	2025-01-10T13:46:26.2492224	Loot Tables
 b4425213e057c959274b51e64697984fa54019bf data/first_mod/loot_table/blocks/converter.json
 be136c9d15662f549283d25b2caed04906e762a9 data/first_mod/loot_table/blocks/ruby_block.json
 79b9a234a5c7e6a327674a120c5ddfb9bc18cb0f data/first_mod/loot_table/blocks/ruby_button.json
@@ -6,9 +6,13 @@ be136c9d15662f549283d25b2caed04906e762a9 data/first_mod/loot_table/blocks/ruby_b
 48e417fcf1ba6ed953ea52654c79f10c3c6b25ae data/first_mod/loot_table/blocks/ruby_door.json
 0bf6bfd6977e006c009690156e6272b1c5f94306 data/first_mod/loot_table/blocks/ruby_fence.json
 3f648bf4d5b46e01f5795f531129d8792e0d343f data/first_mod/loot_table/blocks/ruby_fence_gate.json
+99ebf9beb8d322fde443c50686127a06a749df5d data/first_mod/loot_table/blocks/ruby_lamp.json
 e99d1b8ece873a3d710752c8ae7083ed33dfa4c8 data/first_mod/loot_table/blocks/ruby_ore.json
 849853029f29b850a44865cf9edc1d0625f6ddd3 data/first_mod/loot_table/blocks/ruby_pressure_plate.json
 a9f854a1cd0832a27d2d2dc4fc0167b78271107d data/first_mod/loot_table/blocks/ruby_slab.json
 e7d9261b8e20e2248147769e216b4822e140bcde data/first_mod/loot_table/blocks/ruby_stairs.json
 50c3ca534627633b0ad3be972defe21f07b1abe1 data/first_mod/loot_table/blocks/ruby_trapdoor.json
 cf82fce729dea3ce6140e1204d11ae608c34482b data/first_mod/loot_table/blocks/ruby_walls.json
+297e92601aa5b74035d3e69f83b7c110960228d7 data/first_mod/loot_table/blocks/sugilite_block.json
+dc8fff704f4d6d6f20d2395a25c3c96e7179eff9 data/first_mod/loot_table/blocks/sugilite_deepslate_ore.json
+0796c78fe66e4de5ff45efb2ac3dd7b04bad5634 data/first_mod/loot_table/blocks/sugilite_ore.json

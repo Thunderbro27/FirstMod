@@ -2,7 +2,9 @@ package net.Thunderbro27.firstmod;
 
 import com.mojang.logging.LogUtils;
 import net.Thunderbro27.firstmod.block.ModBlocks;
+import net.Thunderbro27.firstmod.component.ModDataComponent;
 import net.Thunderbro27.firstmod.item.ModCreativeModeTabs;
+import net.Thunderbro27.firstmod.item.ModItemProperties;
 import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -41,6 +43,7 @@ public class MyFirstMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModDataComponent.register(modEventBus);
 
 
 
@@ -69,10 +72,17 @@ public class MyFirstMod
             event.accept(ModBlocks.RUBY_DEEPSLATE_ORE);
             event.accept(ModBlocks.RUBY_ORE);
             event.accept(ModBlocks.CONVERTER.get());
+            event.accept(ModBlocks.RUBY_LAMP);
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
             event.accept(ModItems.RUBY_PICK);
+            event.accept(ModItems.RUBY_AXE);
+            event.accept(ModItems.RUBY_SHOVEL);
+            event.accept(ModItems.RUBY_HOE);
+            event.accept(ModItems.RUBY_SWORD);
             event.accept(ModItems.RUBY_CHISEL);
+            event.accept(ModItems.RUBY_HAMMER);
+            event.accept(ModItems.RUBY_BOW);
         }
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.COCONUT);
@@ -95,7 +105,7 @@ public class MyFirstMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

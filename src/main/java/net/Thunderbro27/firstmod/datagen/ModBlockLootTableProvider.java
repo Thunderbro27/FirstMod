@@ -38,11 +38,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.RUBY_BLOCK.get());
         dropSelf(ModBlocks.CONVERTER.get());
+        dropSelf(ModBlocks.SUGILITE_BLOCK.get());
 
         this.add(ModBlocks.RUBY_DEEPSLATE_ORE.get(),
                 block -> createOreDrop(ModBlocks.RUBY_DEEPSLATE_ORE.get(), ModItems.RUBY.get()));
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createOreDrop(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
+        this.add(ModBlocks.SUGILITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.SUGILITE_ORE.get(), ModItems.SUGILITE.get()));
+        this.add(ModBlocks.SUGILITE_DEEPSLATE_ORE.get(),
+                block -> createOreDrop(ModBlocks.SUGILITE_DEEPSLATE_ORE.get(), ModItems.SUGILITE.get()));
         this.add(ModBlocks.RUBY_SLABS.get(),
                 block -> createSlabItemTable(ModBlocks.RUBY_SLABS.get()));
 
@@ -53,7 +58,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RUBY_PRESSURE_PLATE.get());
         dropSelf(ModBlocks.RUBY_STAIRS.get());
         dropSelf(ModBlocks.RUBY_FENCE_GATE.get());
-
+        dropSelf(ModBlocks.RUBY_LAMP.get());
 
         this.add(ModBlocks.RUBY_DOOR.get(),
                 block -> createDoorTable(ModBlocks.RUBY_DOOR.get()));

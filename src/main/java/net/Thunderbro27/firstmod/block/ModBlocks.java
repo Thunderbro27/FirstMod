@@ -2,6 +2,7 @@ package net.Thunderbro27.firstmod.block;
 
 import net.Thunderbro27.firstmod.MyFirstMod;
 import net.Thunderbro27.firstmod.block.custom.ConverterBlock;
+import net.Thunderbro27.firstmod.block.custom.RubyLamp;
 import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -31,8 +32,22 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUBY_DEEPSLATE_ORE = registerBlock("ruby_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3,6),BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
+
+    public static final RegistryObject<Block> SUGILITE_ORE = registerBlock("sugilite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2,4),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.FROGLIGHT)));
+
+    public static final RegistryObject<Block> SUGILITE_DEEPSLATE_ORE = registerBlock("sugilite_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.FROGLIGHT)));
+
+    public static final RegistryObject<Block> SUGILITE_BLOCK = registerBlock("sugilite_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+
     public static final RegistryObject<ConverterBlock> CONVERTER = registerBlock("converter",
             () -> new ConverterBlock(BlockBehaviour.Properties.of().strength(3f)));
+
+    public static final RegistryObject<Block> RUBY_LAMP = registerBlock("ruby_lamp",
+            () -> new RubyLamp(BlockBehaviour.Properties.of().strength(3f)
+                    .lightLevel(state -> state.getValue(RubyLamp.CLICKED) ? 15 : 0)));
 
     public static final RegistryObject<StairBlock> RUBY_STAIRS = registerBlock("ruby_stairs",
             () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(),
@@ -42,6 +57,7 @@ public static final RegistryObject<SlabBlock> RUBY_SLABS = registerBlock("ruby_s
 
 public static final RegistryObject<PressurePlateBlock> RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.IRON,BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<ButtonBlock> RUBY_BUTTON = registerBlock("ruby_button",
             () -> new ButtonBlock(BlockSetType.IRON,5,
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noCollission()));

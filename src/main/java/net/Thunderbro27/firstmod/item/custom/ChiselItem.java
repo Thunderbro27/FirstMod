@@ -2,6 +2,7 @@ package net.Thunderbro27.firstmod.item.custom;
 
 
 import net.Thunderbro27.firstmod.block.ModBlocks;
+import net.Thunderbro27.firstmod.component.ModDataComponent;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -51,6 +52,8 @@ public class ChiselItem extends Item {
 
                         item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
                 level.playSound(null,pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                pContext.getItemInHand().set(ModDataComponent.BLOCK_COORDINATES.get(), pContext.getClickedPos());
             }
         }
 
