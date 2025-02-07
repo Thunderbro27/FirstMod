@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "first_mod:block/ruby_lamp_off"
+    },
+    "clicked=true": {
+      "model": "first_mod:block/ruby_lamp_on"
+    }
+  }
+}
