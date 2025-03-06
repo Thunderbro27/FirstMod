@@ -70,6 +70,10 @@ public class ChiselItem extends Item {
             pTooltipComponents.add(Component.translatable("tooltip.first_mod.chisel"));
         }
 
+        if(pStack.get(ModDataComponent.BLOCK_COORDINATES.get()) != null){
+            pTooltipComponents.add(Component.literal("Last block changed: "+ pStack.get(ModDataComponent.BLOCK_COORDINATES.get())));
+        }
+
         super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }
 }

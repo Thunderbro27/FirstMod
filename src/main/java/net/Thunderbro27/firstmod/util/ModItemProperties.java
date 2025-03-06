@@ -1,14 +1,18 @@
-package net.Thunderbro27.firstmod.item;
+package net.Thunderbro27.firstmod.util;
 
+import net.Thunderbro27.firstmod.MyFirstMod;
+import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.client.renderer.item.ItemPropertyFunction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+
 
 public class ModItemProperties {
 
     public static void addCustomItemProperties(){
 
+        //ItemProperties.register(ModItems.RUBY_CHISEL.get(), ResourceLocation.fromNamespaceAndPath(MyFirstMod.MOD_ID, "used");
 
 
         makeCustomBow(ModItems.RUBY_BOW.get());

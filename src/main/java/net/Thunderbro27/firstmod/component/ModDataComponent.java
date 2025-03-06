@@ -4,6 +4,9 @@ import net.Thunderbro27.firstmod.MyFirstMod;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.protocol.game.ClientboundPlayerPositionPacket;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -15,6 +18,9 @@ public class ModDataComponent {
             DeferredRegister.create(Registries.DATA_COMPONENT_TYPE, MyFirstMod.MOD_ID);
 
     public static final RegistryObject<DataComponentType<BlockPos>> BLOCK_COORDINATES = register("block_coordinates",
+            builder -> builder.persistent(BlockPos.CODEC));
+
+    public static final RegistryObject<DataComponentType<BlockPos>> PLAYER_BLOCK_COORDINATES = register("player_block_coordinates",
             builder -> builder.persistent(BlockPos.CODEC));
 
     private static <T>RegistryObject<DataComponentType<T>> register(String name, UnaryOperator<DataComponentType.Builder<T>> builderUnaryOperator){

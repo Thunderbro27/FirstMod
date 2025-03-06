@@ -16,11 +16,14 @@ public class RubyTool extends SwordItem {
         super(p_43269_, pProperties);
     }
 
+
+
     @Override
      public void onInventoryTick(ItemStack stack, Level level, Player player, int slotIndex, int selectedIndex) {
         int yLevel = (int)player.getY();
 
             if(!level.isClientSide() && yLevel>= 48){
+
 
             }
 

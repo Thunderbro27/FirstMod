@@ -1,4 +1,4 @@
-// 1.21	2025-01-16T16:25:05.5791724	Item Models: first_mod
+// 1.21	2025-02-13T15:26:21.0786706	Item Models: first_mod
 359845bae5c4731b7bc14879d49236ac804e03cc assets/first_mod/models/item/coconut.json
 8d628ec63eaa4efc8fb12961b500fb290879714c assets/first_mod/models/item/coconut_water.json
 26a8095df401fa950a829c36716b2a35c999e2e8 assets/first_mod/models/item/rock.json
@@ -56,7 +56,6 @@ ec00ec692bfa7a9ec4b625ca6fa9b7d6f4782327 assets/first_mod/models/item/ruby_leggi
 1e90dbfc5f18426ac367bf68c7ebe68ddb8405e4 assets/first_mod/models/item/ruby_leggings_redstone_trim.json
 7ead9178f0da5ef557f62c245c5608273ba92ed2 assets/first_mod/models/item/ruby_pick.json
 ec8ad93a74084e5af8dc87971951ecc805511912 assets/first_mod/models/item/ruby_shovel.json
-bff9d5e563df6e30b71ce1afae7e77f65afc1722 assets/first_mod/models/item/ruby_sword.json
 d8d1bfa920f00991027be976aefce72657dcfe78 assets/first_mod/models/item/ruby_walls.json
 07aed8fd3a6607d947fa3294e3ae277368253cfe assets/first_mod/models/item/steak_and_fries.json
 164b7ff8a8d25a0c0723235c5922f66cc18549ec assets/first_mod/models/item/sugilite.json

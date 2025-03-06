@@ -49,7 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.RUBY_PICK);
         handheldItem(ModItems.RUBY_AXE);
         handheldItem(ModItems.RUBY_SHOVEL);
-        handheldItem(ModItems.RUBY_SWORD);
+        //handheldItem(ModItems.RUBY_SWORD);
         handheldItem(ModItems.RUBY_HOE);
         handheldItem(ModItems.RUBY_HAMMER);
         trimmedArmorItem(ModItems.RUBY_HELMET);

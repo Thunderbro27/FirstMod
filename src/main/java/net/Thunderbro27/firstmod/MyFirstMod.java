@@ -4,7 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.Thunderbro27.firstmod.block.ModBlocks;
 import net.Thunderbro27.firstmod.component.ModDataComponent;
 import net.Thunderbro27.firstmod.item.ModCreativeModeTabs;
-import net.Thunderbro27.firstmod.item.ModItemProperties;
+import net.Thunderbro27.firstmod.util.ModItemProperties;
 import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;

@@ -2,6 +2,9 @@
   "values": [
     "first_mod:ruby_ore",
     "first_mod:ruby_deepslate_ore",
+    "first_mod:sugilite_ore",
+    "first_mod:sugilite_deepslate_ore",
+    "first_mod:sugilite_block",
     "#minecraft:needs_diamond_tool"
   ]
 }
