@@ -5,12 +5,8 @@ import net.Thunderbro27.firstmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -22,7 +18,6 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.Map;
 import java.util.Set;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
@@ -38,16 +33,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.RUBY_BLOCK.get());
         dropSelf(ModBlocks.CONVERTER.get());
-        dropSelf(ModBlocks.SUGILITE_BLOCK.get());
+        dropSelf(ModBlocks.GLOOBRITE_BLOCK.get());
 
         this.add(ModBlocks.RUBY_DEEPSLATE_ORE.get(),
                 block -> createOreDrop(ModBlocks.RUBY_DEEPSLATE_ORE.get(), ModItems.RUBY.get()));
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createOreDrop(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
-        this.add(ModBlocks.SUGILITE_ORE.get(),
-                block -> createOreDrop(ModBlocks.SUGILITE_ORE.get(), ModItems.SUGILITE.get()));
-        this.add(ModBlocks.SUGILITE_DEEPSLATE_ORE.get(),
-                block -> createOreDrop(ModBlocks.SUGILITE_DEEPSLATE_ORE.get(), ModItems.SUGILITE.get()));
+        this.add(ModBlocks.GLOOBRITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.GLOOBRITE_ORE.get(), ModItems.GLOOBRITE.get()));
+        this.add(ModBlocks.GLOOBRITE_DEEPSLATE_ORE.get(),
+                block -> createOreDrop(ModBlocks.GLOOBRITE_DEEPSLATE_ORE.get(), ModItems.GLOOBRITE.get()));
         this.add(ModBlocks.RUBY_SLABS.get(),
                 block -> createSlabItemTable(ModBlocks.RUBY_SLABS.get()));
 

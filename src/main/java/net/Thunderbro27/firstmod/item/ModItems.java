@@ -3,9 +3,6 @@ package net.Thunderbro27.firstmod.item;
 import net.Thunderbro27.firstmod.MyFirstMod;
 import net.Thunderbro27.firstmod.item.custom.*;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -66,8 +63,11 @@ public class ModItems {
 
 
     //Sugilite Items---------------------------------------------------------------------------
-    public static final RegistryObject<Item> SUGILITE = ITEMS.register("sugilite",
+    public static final RegistryObject<Item> GLOOBRITE = ITEMS.register("gloobrite",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GOOBRITE_PICKAXE = ITEMS.register("gloobrite_pickaxe",
+            () -> new PickaxeItem(ModToolTier.GLOOBRITE, new Item.Properties()
+                    .attributes(PickaxeItem.m_320415_(ModToolTier.GLOOBRITE, 1F,-2.8f))));
     //End of Sugilite Items--------------------------------------------------------------------
 
     //Food And Drink Items---------------------------------------------------------------------

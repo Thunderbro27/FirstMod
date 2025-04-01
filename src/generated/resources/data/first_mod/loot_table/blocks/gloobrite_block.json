@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "first_mod:sugilite_block"
+          "name": "first_mod:gloobrite_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "first_mod:blocks/sugilite_block"
+  "random_sequence": "first_mod:blocks/gloobrite_block"
 }

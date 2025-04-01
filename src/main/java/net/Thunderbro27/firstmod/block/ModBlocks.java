@@ -33,13 +33,13 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3,6),BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
-    public static final RegistryObject<Block> SUGILITE_ORE = registerBlock("sugilite_ore",
+    public static final RegistryObject<Block> GLOOBRITE_ORE = registerBlock("gloobrite_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.FROGLIGHT)));
 
-    public static final RegistryObject<Block> SUGILITE_DEEPSLATE_ORE = registerBlock("sugilite_deepslate_ore",
+    public static final RegistryObject<Block> GLOOBRITE_DEEPSLATE_ORE = registerBlock("gloobrite_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3,6),BlockBehaviour.Properties.of().strength(5f).requiresCorrectToolForDrops().sound(SoundType.FROGLIGHT)));
 
-    public static final RegistryObject<Block> SUGILITE_BLOCK = registerBlock("sugilite_block",
+    public static final RegistryObject<Block> GLOOBRITE_BLOCK = registerBlock("gloobrite_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
 
     public static final RegistryObject<ConverterBlock> CONVERTER = registerBlock("converter",

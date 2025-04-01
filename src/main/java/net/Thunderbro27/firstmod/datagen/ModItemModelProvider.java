@@ -43,7 +43,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.RUBY.get());
-        basicItem(ModItems.SUGILITE.get());
+        basicItem(ModItems.GLOOBRITE.get());
         basicItem(ModItems.ROCK.get());
         basicItem(ModItems.RUBY_CHISEL.get());
         handheldItem(ModItems.RUBY_PICK);
@@ -57,6 +57,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.RUBY_LEGGINGS);
         trimmedArmorItem(ModItems.RUBY_BOOTS);
 
+        handheldItem(ModItems.GOOBRITE_PICKAXE);
 
         basicItem(ModItems.COCONUT.get());
         basicItem(ModItems.COCONUT_WATER.get());

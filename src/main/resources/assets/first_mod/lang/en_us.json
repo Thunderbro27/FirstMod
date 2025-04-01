@@ -9,7 +9,7 @@
 
 
   "item.first_mod.rock": "Rock",
-  "item.first_mod.sugilite": "Sugilite",
+  "item.first_mod.gloobrite": "Gloobrite",
   "item.first_mod.ruby": "Ruby",
 
   "item.first_mod.ruby_pick": "Ruby Pickaxe",
@@ -17,7 +17,7 @@
   "item.first_mod.ruby_shovel": "Ruby Shovel",
   "item.first_mod.ruby_hoe": "Ruby Hoe",
   "item.first_mod.ruby_axe": "Ruby Axe",
-  "item.first_mod.ruby_hammer": "Ruby Hammer (Tempo image)",
+  "item.first_mod.ruby_hammer": "Ruby Hammer",
   "item.first_mod.ruby_helmet": "Ruby Helmet",
   "item.first_mod.ruby_chestplate": "Ruby Chestplate",
   "item.first_mod.ruby_leggings": "Ruby Leggings",
@@ -44,5 +44,6 @@
   "block.first_mod.converter": "Converter",
   "block.first_mod.sugilite_ore": "Sugilite Ore",
   "block.first_mod.sugilite_deepslate_ore": "Sugilite Ore",
-  "block.first_mod.sugilite_block": "Sugilite Block"
+  "block.first_mod.sugilite_block": "Gloobrite Block",
+  "item.first_mod.gloobrite_pickaxe": "Gloobrite Pickaxe"
 }

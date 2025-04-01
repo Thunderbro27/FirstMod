@@ -34,8 +34,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COCONUT.get());
                         output.accept(ModItems.STEAK_AND_FRIES.get());
                         output.accept(ModItems.COCONUT_WATER.get());
-                        output.accept(ModItems.SUGILITE.get());
+                        output.accept(ModItems.GLOOBRITE.get());
                         output.accept(ModItems.RUBY_BOW.get());
+                        output.accept(ModItems.GOOBRITE_PICKAXE.get());
                     })
             .build());
 
@@ -56,9 +57,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RUBY_SLABS.get());
                         output.accept(ModBlocks.RUBY_WALLS.get());
                         output.accept(ModBlocks.RUBY_TRAPDOOR.get());
-                        output.accept(ModBlocks.SUGILITE_BLOCK.get());
-                        output.accept(ModBlocks.SUGILITE_ORE.get());
-                        output.accept(ModBlocks.SUGILITE_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.GLOOBRITE_BLOCK.get());
+                        output.accept(ModBlocks.GLOOBRITE_ORE.get());
+                        output.accept(ModBlocks.GLOOBRITE_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.CONVERTER.get());
                         output.accept(ModBlocks.RUBY_LAMP.get());
                     })

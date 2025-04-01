@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "first_mod:sugilite_ore"
+              "name": "first_mod:gloobrite_deepslate_ore"
             },
             {
               "type": "minecraft:item",
@@ -40,7 +40,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "first_mod:sugilite"
+              "name": "first_mod:gloobrite"
             }
           ]
         }
@@ -48,5 +48,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "first_mod:blocks/sugilite_ore"
+  "random_sequence": "first_mod:blocks/gloobrite_deepslate_ore"
 }
