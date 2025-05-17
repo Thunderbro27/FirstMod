@@ -62,13 +62,20 @@ public class ModItems {
     // 2. m_321370_ is the getDurability method, its parameter(p_333841_) is pDurabilityFactor
 
 
-    //Sugilite Items---------------------------------------------------------------------------
-    public static final RegistryObject<Item> GLOOBRITE = ITEMS.register("gloobrite",
+    //Goobrite Items---------------------------------------------------------------------------
+    public static final RegistryObject<Item> GOOBRITE = ITEMS.register("gloobrite",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GOOBRITE_PICKAXE = ITEMS.register("gloobrite_pickaxe",
-            () -> new PickaxeItem(ModToolTier.GLOOBRITE, new Item.Properties()
-                    .attributes(PickaxeItem.m_320415_(ModToolTier.GLOOBRITE, 1F,-2.8f))));
-    //End of Sugilite Items--------------------------------------------------------------------
+    public static final RegistryObject<Item> GOOBRITE_PICKAXE = ITEMS.register("goobrite_pickaxe",
+            () -> new PickaxeItem(ModToolTier.GOOBRITE, new Item.Properties()
+                    .attributes(PickaxeItem.m_320415_(ModToolTier.GOOBRITE, 1F,-3.8f))));
+    /*public static final RegistryObject<Item> GOOBRITE_SWORD = ITEMS.register("goobrite_sword",
+            ()-> new SwordItem(ModToolTier.GOOBRITE, new Item.Properties()
+                    .attributes(SwordItem.m_322253_(ModToolTier.RUBY,1,-2.4f))));
+    public static final RegistryObject<Item> GOOBRITE_SHOVEL = ITEMS.register("goobrite_shovel",
+            ()-> new ShovelItem(ModToolTier.GOOBRITE, new Item.Properties()
+                    .attributes(PickaxeItem.m_320415_(ModToolTier.RUBY,1.5f,-3f))));*/
+
+    //End of Goobriteite Items--------------------------------------------------------------------
 
     //Food And Drink Items---------------------------------------------------------------------
     public static final RegistryObject<Item> COCONUT = ITEMS.register("coconut",

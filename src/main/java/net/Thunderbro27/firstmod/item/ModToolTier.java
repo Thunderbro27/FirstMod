@@ -11,8 +11,8 @@ public class ModToolTier {
     public static final Tier RUBY = new ForgeTier(1400,10F,5F,14,
             ModTags.Blocks.NEEDS_RUBY_TOOL, () -> Ingredient.of(ModItems.RUBY.get()),
             ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL);
-    public static final Tier GLOOBRITE = new ForgeTier(1400, 10F, 5F, 14,
-            ModTags.Blocks.NEEDS_GLOOBRITE_TOOL, ()-> Ingredient.of(ModItems.GLOOBRITE.get()),
+    public static final Tier GOOBRITE = new ForgeTier(1400, 10F, 5F, 14,
+            ModTags.Blocks.NEEDS_GLOOBRITE_TOOL, ()-> Ingredient.of(ModItems.GOOBRITE.get()),
             ModTags.Blocks.INCORRECT_FOR_GLOOBRITE_TOOL);
 
 }

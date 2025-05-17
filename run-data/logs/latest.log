@@ -1,27 +1,27 @@
-[15Mar2025 13:03:54.216] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, /Users/brandonmccoll/.gradle/caches/forge_gradle/assets, --gameDir, ., --mod, first_mod, --all, --output, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/generated/resources, --existing, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/main/resources]
-[15Mar2025 13:03:54.219] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
-[15Mar2025 13:03:54.223] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.6 by Eclipse Adoptium; OS Mac OS X arch x86_64 version 15.0.1
-[15Mar2025 13:03:54.366] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[15Mar2025 13:03:54.509] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///Users/brandonmccoll/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[15Mar2025 13:03:55.549] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[15Mar2025 13:03:56.633] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, /Users/brandonmccoll/.gradle/caches/forge_gradle/assets, --assetIndex, 17, --mod, first_mod, --all, --output, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/generated/resources, --existing, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/main/resources]
-[15Mar2025 13:04:02.766] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
-[15Mar2025 13:04:02.766] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
-[15Mar2025 13:04:02.788] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[15Mar2025 13:04:03.519] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [first_mod]
-[15Mar2025 13:04:03.629] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/brandonmccoll/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4/forge-1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[15Mar2025 13:04:03.634] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/brandonmccoll/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4/forge-1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
-[15Mar2025 13:04:03.851] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[15Mar2025 13:04:04.166] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 314 ms
-[15Mar2025 13:04:04.167] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[15Mar2025 13:04:04.221] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 53 ms
-[15Mar2025 13:04:04.221] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id first_mod
-[15Mar2025 13:04:04.234] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id first_mod finished after 12 ms
-[15Mar2025 13:04:04.234] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id first_mod
-[15Mar2025 13:04:04.236] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id first_mod finished after 1 ms
-[15Mar2025 13:04:04.236] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: first_mod
-[15Mar2025 13:04:04.271] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: first_mod finished after 34 ms
-[15Mar2025 13:04:04.271] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: first_mod
-[15Mar2025 13:04:04.372] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: first_mod finished after 100 ms
-[15Mar2025 13:04:04.372] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 521 ms
-[15Mar2025 13:04:04.390] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 203, old count: 190, new count: 190, removed stale: 14, written: 17
+[15May2025 13:49:13.929] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, /Users/brandonmccoll/.gradle/caches/forge_gradle/assets, --gameDir, ., --mod, first_mod, --all, --output, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/generated/resources, --existing, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/main/resources]
+[15May2025 13:49:13.936] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
+[15May2025 13:49:13.939] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.6 by Eclipse Adoptium; OS Mac OS X arch x86_64 version 15.0.1
+[15May2025 13:49:14.107] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[15May2025 13:49:14.341] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///Users/brandonmccoll/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[15May2025 13:49:15.618] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[15May2025 13:49:16.940] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, /Users/brandonmccoll/.gradle/caches/forge_gradle/assets, --assetIndex, 17, --mod, first_mod, --all, --output, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/generated/resources, --existing, /Users/brandonmccoll/Documents/GitHub/FirstMod/src/main/resources]
+[15May2025 13:49:25.413] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[15May2025 13:49:25.414] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[15May2025 13:49:25.478] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[15May2025 13:49:26.569] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [first_mod]
+[15May2025 13:49:26.721] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/brandonmccoll/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4/forge-1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[15May2025 13:49:26.722] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/Users/brandonmccoll/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4/forge-1.21-51.0.33_mapped_parchment_2025.01.05-1.21.4-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[15May2025 13:49:26.921] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[15May2025 13:49:27.371] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 448 ms
+[15May2025 13:49:27.371] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[15May2025 13:49:27.459] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 87 ms
+[15May2025 13:49:27.459] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id first_mod
+[15May2025 13:49:27.473] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id first_mod finished after 13 ms
+[15May2025 13:49:27.474] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id first_mod
+[15May2025 13:49:27.476] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id first_mod finished after 2 ms
+[15May2025 13:49:27.477] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: first_mod
+[15May2025 13:49:27.510] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: first_mod finished after 33 ms
+[15May2025 13:49:27.511] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: first_mod
+[15May2025 13:49:27.686] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: first_mod finished after 174 ms
+[15May2025 13:49:27.686] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 765 ms
+[15May2025 13:49:27.710] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 190, old count: 191, new count: 190, removed stale: 1, written: 1

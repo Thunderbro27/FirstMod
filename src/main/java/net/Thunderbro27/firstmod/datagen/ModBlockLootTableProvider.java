@@ -40,9 +40,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createOreDrop(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
         this.add(ModBlocks.GLOOBRITE_ORE.get(),
-                block -> createOreDrop(ModBlocks.GLOOBRITE_ORE.get(), ModItems.GLOOBRITE.get()));
+                block -> createOreDrop(ModBlocks.GLOOBRITE_ORE.get(), ModItems.GOOBRITE.get()));
         this.add(ModBlocks.GLOOBRITE_DEEPSLATE_ORE.get(),
-                block -> createOreDrop(ModBlocks.GLOOBRITE_DEEPSLATE_ORE.get(), ModItems.GLOOBRITE.get()));
+                block -> createOreDrop(ModBlocks.GLOOBRITE_DEEPSLATE_ORE.get(), ModItems.GOOBRITE.get()));
         this.add(ModBlocks.RUBY_SLABS.get(),
                 block -> createSlabItemTable(ModBlocks.RUBY_SLABS.get()));
 

@@ -34,7 +34,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COCONUT.get());
                         output.accept(ModItems.STEAK_AND_FRIES.get());
                         output.accept(ModItems.COCONUT_WATER.get());
-                        output.accept(ModItems.GLOOBRITE.get());
+                        output.accept(ModItems.GOOBRITE.get());
                         output.accept(ModItems.RUBY_BOW.get());
                         output.accept(ModItems.GOOBRITE_PICKAXE.get());
                     })

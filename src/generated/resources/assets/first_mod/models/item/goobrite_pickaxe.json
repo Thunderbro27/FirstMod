@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "first_mod:item/gloobrite_pickaxe"
+    "layer0": "first_mod:item/goobrite_pickaxe"
   }
 }
