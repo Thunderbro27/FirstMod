@@ -7,10 +7,8 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.MinecartItem;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -22,14 +20,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     @Override
-    protected void m_245200_(RecipeOutput p_297267_) {
+    protected void buildRecipes(RecipeOutput recipeOutput) {
 
         List<ItemLike> RUBY_SMELTABLES = List.of(ModBlocks.RUBY_ORE.get(),
                 ModBlocks.RUBY_DEEPSLATE_ORE.get());
 
-        oreSmelting(p_297267_, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
+        oreSmelting(recipeOutput, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
                 0.25f,  200, "ruby");
-        oreBlasting(p_297267_, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
+        oreBlasting(recipeOutput, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(),
                 0.25f,  100, "ruby");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RUBY_BLOCK.get())
@@ -37,13 +35,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .pattern("AAA")
                 .define('A', ModItems.RUBY.get())
-                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(p_297267_);
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(recipeOutput);
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RUBY.get(), 9)
                 .requires(ModBlocks.RUBY_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.RUBY_BLOCK.get()), has(ModBlocks.RUBY_BLOCK.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_CHISEL.get())
@@ -52,7 +50,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.RUBY.get())
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_CHISEL.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_PICK.get())
@@ -62,7 +60,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.RUBY.get())
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_PICK.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_SWORD.get())
                 .pattern(" A ")
@@ -71,7 +69,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.RUBY.get())
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_SWORD.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_AXE.get())
                 .pattern("AA ")
@@ -80,7 +78,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.RUBY.get())
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_AXE.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_SHOVEL.get())
                 .pattern(" A ")
@@ -89,7 +87,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.RUBY.get())
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_SHOVEL.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.RUBY_HOE.get())
                 .pattern("AA ")
@@ -98,7 +96,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.RUBY.get())
                 .define('/', Items.STICK)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY_HOE.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CONVERTER.get())
                 .pattern("AAA")
@@ -107,20 +105,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.RUBY.get())
                 .define('E', Items.ENDER_EYE)
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModBlocks.CONVERTER.get()))
-                .save(p_297267_);
+                .save(recipeOutput);
 
 
 
         stairBuilder(ModBlocks.RUBY_STAIRS.get(), Ingredient.of(ModItems.RUBY.get())).group("ruby")
-                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(p_297267_);
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(recipeOutput);
 
-        slab(p_297267_, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLABS.get(), ModItems.RUBY.get());
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLABS.get(), ModItems.RUBY.get());
 
         fenceBuilder(ModBlocks.RUBY_FENCE.get(),Ingredient.of(ModItems.RUBY.get())).group("ruby")
-                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(p_297267_);
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(recipeOutput);
 
         fenceGateBuilder(ModBlocks.RUBY_FENCE_GATE.get(),Ingredient.of(ModItems.RUBY.get())).group("ruby")
-                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(p_297267_);
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get())).save(recipeOutput);
 
         wallBuilder( RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_WALLS.get(), Ingredient.of(ModItems.RUBY.get()));
 

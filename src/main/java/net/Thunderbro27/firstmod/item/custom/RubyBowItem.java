@@ -90,10 +90,10 @@ public class RubyBowItem extends ProjectileWeaponItem {
         var ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, p_40672_, p_40673_, p_40674_, flag);
         if (ret != null) return ret;
         if (!p_40673_.hasInfiniteMaterials() && !flag) {
-            return InteractionResultHolder.m_19100_(itemstack);
+            return InteractionResultHolder.consume(itemstack);
         } else {
             p_40673_.startUsingItem(p_40674_);
-            return InteractionResultHolder.m_19096_(itemstack);
+            return InteractionResultHolder.consume(itemstack);
         }
     }
 

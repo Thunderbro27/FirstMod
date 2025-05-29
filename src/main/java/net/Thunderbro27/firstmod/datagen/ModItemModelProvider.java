@@ -25,16 +25,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();
     static {
-        trimMaterials.put(TrimMaterials.f_265905_, 0.1F);
-        trimMaterials.put(TrimMaterials.f_266000_, 0.2F);
-        trimMaterials.put(TrimMaterials.f_265896_, 0.3F);
-        trimMaterials.put(TrimMaterials.f_265870_, 0.4F);
-        trimMaterials.put(TrimMaterials.f_265969_, 0.5F);
-        trimMaterials.put(TrimMaterials.f_265937_, 0.6F);
-        trimMaterials.put(TrimMaterials.f_266071_, 0.7F);
-        trimMaterials.put(TrimMaterials.f_266027_, 0.8F);
-        trimMaterials.put(TrimMaterials.f_265981_, 0.9F);
-        trimMaterials.put(TrimMaterials.f_265872_, 1.0F);
+        trimMaterials.put(TrimMaterials.AMETHYST, 0.1F);
+        trimMaterials.put(TrimMaterials.COPPER, 0.2F);
+        trimMaterials.put(TrimMaterials.GOLD, 0.3F);
+        trimMaterials.put(TrimMaterials.LAPIS, 0.4F);
+        trimMaterials.put(TrimMaterials.REDSTONE, 0.5F);
+        trimMaterials.put(TrimMaterials.EMERALD, 0.6F);
+        trimMaterials.put(TrimMaterials.IRON, 0.7F);
+        trimMaterials.put(TrimMaterials.QUARTZ, 0.8F);
+        trimMaterials.put(TrimMaterials.NETHERITE, 0.9F);
+        trimMaterials.put(TrimMaterials.DIAMOND, 1.0F);
     }
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
         super(output, MyFirstMod.MOD_ID, existingFileHelper);
@@ -82,7 +82,7 @@ public class ModItemModelProvider extends ItemModelProvider {
             trimMaterials.forEach((trimMaterial, value) -> {
                 float trimValue = value;
 
-                String armorType = switch (armorItem.m_40402_()) {
+                String armorType = switch (armorItem.getEquipmentSlot()) {
                     case HEAD -> "helmet";
                     case CHEST -> "chestplate";
                     case LEGS -> "leggings";

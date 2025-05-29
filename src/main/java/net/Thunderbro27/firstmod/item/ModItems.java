@@ -21,37 +21,37 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RUBY_PICK = ITEMS.register("ruby_pick",
             () -> new PickaxeItem(ModToolTier.RUBY, new Item.Properties()
-                    .attributes(PickaxeItem.m_320415_(ModToolTier.RUBY,1f,-2.8f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.RUBY,1f,-2.8f))));
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
             () -> new SwordItem(ModToolTier.RUBY, new Item.Properties()
                     //Adding item property to the sword: The lower your Y level, the more dmg it does.
-                    .attributes(SwordItem.m_322253_(ModToolTier.RUBY,3,-2.4f))));
+                    .attributes(SwordItem.createAttributes(ModToolTier.RUBY,3,-2.4f))));
     public static final RegistryObject<Item> RUBY_AXE = ITEMS.register("ruby_axe",
             () -> new AxeItem(ModToolTier.RUBY, new Item.Properties()
-                    .attributes(PickaxeItem.m_320415_(ModToolTier.RUBY,6f,-3.2f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.RUBY,6f,-3.2f))));
     public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
             () -> new ShovelItem(ModToolTier.RUBY, new Item.Properties()
-                    .attributes(PickaxeItem.m_320415_(ModToolTier.RUBY,1.5f,-3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.RUBY,1.5f,-3f))));
     public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
             () -> new HoeItem(ModToolTier.RUBY, new Item.Properties()
-                    .attributes(PickaxeItem.m_320415_(ModToolTier.RUBY,0f,-3f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.RUBY,0f,-3f))));
     public static final RegistryObject<Item> RUBY_CHISEL = ITEMS.register("ruby_chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
     public static final RegistryObject<Item> RUBY_HAMMER = ITEMS.register("ruby_hammer",
             () -> new HammerItem(ModToolTier.RUBY, new Item.Properties()
-                    .attributes(PickaxeItem.m_320415_(ModToolTier.RUBY,7,-3.5f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.RUBY,7,-3.5f))));
     public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
             () -> new ModArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.m_321370_(18))));
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18))));
     public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
             () -> new ArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.m_321370_(18))));
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(18))));
     public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register("ruby_leggings",
             () -> new ArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.m_321370_(18))));
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(18))));
     public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
             () -> new ArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.m_321370_(18))));
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))));
     public static final RegistryObject<Item> RUBY_BOW = ITEMS.register("ruby_bow",
             () -> new RubyBowItem(new Item.Properties().durability(400)) );
     //End of Ruby Items------------------------------------------------------------------------
@@ -67,7 +67,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GOOBRITE_PICKAXE = ITEMS.register("goobrite_pickaxe",
             () -> new PickaxeItem(ModToolTier.GOOBRITE, new Item.Properties()
-                    .attributes(PickaxeItem.m_320415_(ModToolTier.GOOBRITE, 1F,-3.8f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTier.GOOBRITE, 1F,-3.8f))));
     /*public static final RegistryObject<Item> GOOBRITE_SWORD = ITEMS.register("goobrite_sword",
             ()-> new SwordItem(ModToolTier.GOOBRITE, new Item.Properties()
                     .attributes(SwordItem.m_322253_(ModToolTier.RUBY,1,-2.4f))));

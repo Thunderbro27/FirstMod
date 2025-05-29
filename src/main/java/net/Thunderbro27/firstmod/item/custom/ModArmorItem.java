@@ -67,10 +67,10 @@ public class ModArmorItem extends ArmorItem {
         ArmorItem chestplate = ((ArmorItem) player.getInventory().getArmor(2).getItem());
         ArmorItem helmet = ((ArmorItem) player.getInventory().getArmor(3).getItem());
 
-        return boots.m_40401_() == mapArmorMaterial && leggings.m_40401_() == mapArmorMaterial
-                && chestplate.m_40401_() == mapArmorMaterial && helmet.m_40401_() == mapArmorMaterial;
+        return boots.getMaterial() == mapArmorMaterial && leggings.getMaterial()== mapArmorMaterial
+                && chestplate.getMaterial()== mapArmorMaterial && helmet.getMaterial()== mapArmorMaterial;
     }
-//m_40401_() is getMaterial()
+//getMaterial()is getMaterial()
     private boolean hasFullSuitOfArmorOn(Player player) {
         ItemStack boots = player.getInventory().getArmor(0);
         ItemStack leggings = player.getInventory().getArmor(1);

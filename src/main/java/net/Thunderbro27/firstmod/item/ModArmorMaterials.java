@@ -44,7 +44,7 @@ public class ModArmorMaterials {
         }
 
 
-        return Registry.registerForHolder(BuiltInRegistries.f_315942_, location,
+        return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location,
                 new ArmorMaterial(typeProtection, enchantability, equipSound, ingredint, layers, toughness, knockbackResistance));
     }
 }

@@ -60,7 +60,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     }
     protected LootTable.Builder createMultiOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
-        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.m_255025_(Registries.ENCHANTMENT);
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(
                 pBlock,
                 (LootPoolEntryContainer.Builder<?>)this.applyExplosionDecay(
